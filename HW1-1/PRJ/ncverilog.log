@@ -1,0 +1,127 @@
+ncverilog: 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-s005: Started on Apr 02, 2018 at 11:20:24 CST
+ncverilog
+	HW1_1_tb.v
+	+access+r
+Recompiling... reason: file './HW1_1_tb.v' is newer than expected.
+	expected: Mon Apr  2 11:13:33 2018
+	actual:   Mon Apr  2 11:20:17 2018
+file: HW1_1_tb.v
+	module worklib.test_HW1_1:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test_HW1_1:v <0x5b102852>
+			streams:   7, words:  9440
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 5       4
+		Primitives:             71       4
+		Registers:               5       5
+		Scalar wires:            4       -
+		Expanded wires:         16       2
+		Vectored wires:          3       -
+		Always blocks:           1       1
+		Initial blocks:          3       3
+		Cont. assignments:       1       1
+		Pseudo assignments:      3       3
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.test_HW1_1:v
+Loading snapshot worklib.test_HW1_1:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+                   0 gate level: A=11111010 B=11111100 Add_ctrl=1 SUM=xxxxxxxx Overflow=x
+		     RTL level: A=11111010 B=11111100 Add_ctrl=1 SUM=xxxxxxxx Overflow=x
+
+                   4 gate level: A=11111010 B=11111100 Add_ctrl=1 SUM=xxxxxxx0 Overflow=x
+		     RTL level: A=11111010 B=11111100 Add_ctrl=1 SUM=xxxxxxx0 Overflow=x
+
+                   5 gate level: A=11111010 B=11111100 Add_ctrl=1 SUM=1111x110 Overflow=x
+		     RTL level: A=11111010 B=11111100 Add_ctrl=1 SUM=1111x110 Overflow=x
+
+                   6 gate level: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=x
+		     RTL level: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=x
+
+                   8 gate level: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=0
+		     RTL level: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=0
+
+                  20 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=11110110 Overflow=0
+		     RTL level: A=00000011 B=11111111 Add_ctrl=1 SUM=11110110 Overflow=0
+
+                  22 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00001110 Overflow=0
+		     RTL level: A=00000011 B=11111111 Add_ctrl=1 SUM=00001110 Overflow=0
+
+                  23 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=11111110 Overflow=0
+		     RTL level: A=00000011 B=11111111 Add_ctrl=1 SUM=11111110 Overflow=0
+
+                  24 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=11111010 Overflow=0
+		     RTL level: A=00000011 B=11111111 Add_ctrl=1 SUM=11111010 Overflow=0
+
+                  25 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=11100010 Overflow=0
+		     RTL level: A=00000011 B=11111111 Add_ctrl=1 SUM=11100010 Overflow=0
+
+                  27 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     RTL level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+
+                  40 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=00000010 Overflow=0
+		     RTL level: A=01001111 B=01110000 Add_ctrl=1 SUM=00000010 Overflow=0
+
+                  42 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=01000010 Overflow=0
+		     RTL level: A=01001111 B=01110000 Add_ctrl=1 SUM=01000010 Overflow=0
+
+                  43 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=11000011 Overflow=0
+		     RTL level: A=01001111 B=01110000 Add_ctrl=1 SUM=11000011 Overflow=0
+
+                  44 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=11000111 Overflow=0
+		     RTL level: A=01001111 B=01110000 Add_ctrl=1 SUM=11000111 Overflow=0
+
+                  45 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=11011111 Overflow=1
+		     RTL level: A=01001111 B=01110000 Add_ctrl=1 SUM=11011111 Overflow=1
+
+                  47 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=10111111 Overflow=1
+		     RTL level: A=01001111 B=01110000 Add_ctrl=1 SUM=10111111 Overflow=1
+
+                  60 gate level: A=11111110 B=11111111 Add_ctrl=0 SUM=10111111 Overflow=1
+		     RTL level: A=11111110 B=11111111 Add_ctrl=0 SUM=10111111 Overflow=1
+
+                  62 gate level: A=11111110 B=11111111 Add_ctrl=0 SUM=00001111 Overflow=0
+		     RTL level: A=11111110 B=11111111 Add_ctrl=0 SUM=00001111 Overflow=0
+
+                  63 gate level: A=11111110 B=11111111 Add_ctrl=0 SUM=01101111 Overflow=0
+		     RTL level: A=11111110 B=11111111 Add_ctrl=0 SUM=01101111 Overflow=0
+
+                  64 gate level: A=11111110 B=11111111 Add_ctrl=0 SUM=00011111 Overflow=0
+		     RTL level: A=11111110 B=11111111 Add_ctrl=0 SUM=00011111 Overflow=0
+
+                  65 gate level: A=11111110 B=11111111 Add_ctrl=0 SUM=11111111 Overflow=0
+		     RTL level: A=11111110 B=11111111 Add_ctrl=0 SUM=11111111 Overflow=0
+
+                  80 gate level: A=10000000 B=00000001 Add_ctrl=0 SUM=11111111 Overflow=0
+		     RTL level: A=10000000 B=00000001 Add_ctrl=0 SUM=11111111 Overflow=0
+
+                  83 gate level: A=10000000 B=00000001 Add_ctrl=0 SUM=01111111 Overflow=0
+		     RTL level: A=10000000 B=00000001 Add_ctrl=0 SUM=01111111 Overflow=0
+
+                  86 gate level: A=10000000 B=00000001 Add_ctrl=0 SUM=01111111 Overflow=1
+		     RTL level: A=10000000 B=00000001 Add_ctrl=0 SUM=01111111 Overflow=1
+
+                 100 gate level: A=01000000 B=10000001 Add_ctrl=0 SUM=01111111 Overflow=1
+		     RTL level: A=01000000 B=10000001 Add_ctrl=0 SUM=01111111 Overflow=1
+
+                 102 gate level: A=01000000 B=10000001 Add_ctrl=0 SUM=00111111 Overflow=0
+		     RTL level: A=01000000 B=10000001 Add_ctrl=0 SUM=00111111 Overflow=0
+
+                 103 gate level: A=01000000 B=10000001 Add_ctrl=0 SUM=10111111 Overflow=0
+		     RTL level: A=01000000 B=10000001 Add_ctrl=0 SUM=10111111 Overflow=0
+
+                 105 gate level: A=01000000 B=10000001 Add_ctrl=0 SUM=10111111 Overflow=1
+		     RTL level: A=01000000 B=10000001 Add_ctrl=0 SUM=10111111 Overflow=1
+
+Simulation complete via $finish(1) at time 120 NS + 0
+./HW1_1_tb.v:68     $finish;
+ncsim> exit
+TOOL:	ncverilog	14.10-s005: Exiting on Apr 02, 2018 at 11:20:25 CST  (total: 00:00:01)

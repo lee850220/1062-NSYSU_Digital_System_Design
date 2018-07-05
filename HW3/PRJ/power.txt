@@ -1,0 +1,47 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : traffic_light
+Version: N-2017.09-SP2
+Date   : Sun May 27 16:45:43 2018
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  15.4409 uW   (97%)
+  Net Switching Power  = 422.7268 nW    (3%)
+                         ---------
+Total Dynamic Power    =  15.8637 uW  (100%)
+
+Cell Leakage Power     = 627.1688 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       1.5056e-02        1.2199e-04        3.7713e+05        1.5555e-02  (  94.33%)
+sequential     2.5006e-07            0.0000        9.0202e+04        9.0469e-05  (   0.55%)
+combinational  3.8465e-04        3.0072e-04        1.5983e+05        8.4520e-04  (   5.13%)
+--------------------------------------------------------------------------------------------------
+Total          1.5441e-02 mW     4.2273e-04 mW     6.2717e+05 pW     1.6491e-02 mW

@@ -1,0 +1,43 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : HW1_1_RTL
+Version: N-2017.09-SP2
+Date   : Fri Apr 27 21:46:05 2018
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: Add_ctrl (input port)
+  Endpoint: Overflow (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  Add_ctrl (in)                                           0.00       0.00 r
+  U9/Y (CLKINVX1)                                         0.18       0.18 f
+  r301/ADD_SUB (HW1_1_RTL_DW01_addsub_0)                  0.00       0.18 f
+  r301/U9/Y (XOR2X1)                                      0.21       0.39 f
+  r301/U1_0/CO (ADDFXL)                                   0.63       1.02 f
+  r301/U1_1/CO (ADDFXL)                                   0.38       1.40 f
+  r301/U1_2/CO (ADDFXL)                                   0.38       1.77 f
+  r301/U1_3/CO (ADDFXL)                                   0.38       2.15 f
+  r301/U1_4/CO (ADDFXL)                                   0.38       2.52 f
+  r301/U1_5/CO (ADDFXL)                                   0.38       2.90 f
+  r301/U1_6/CO (ADDFXL)                                   0.38       3.28 f
+  r301/U1_7/S (ADDFXL)                                    0.28       3.56 f
+  r301/SUM[7] (HW1_1_RTL_DW01_addsub_0)                   0.00       3.56 f
+  U11/Y (OR2X1)                                           0.26       3.82 f
+  U10/Y (MXI2X1)                                          0.10       3.92 r
+  Overflow (out)                                          0.00       3.92 r
+  data arrival time                                                  3.92
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+

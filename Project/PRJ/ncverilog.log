@@ -1,0 +1,1038 @@
+ncverilog(64): 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-s005: Started on Jun 29, 2018 at 17:43:08 CST
+ncverilog
+	tb_syn.v
+	+access+r
+Recompiling... reason: file './tb_syn.v' is newer than expected.
+	expected: Fri Jun 29 16:54:05 2018
+	actual:   Fri Jun 29 17:42:58 2018
+file: tb_syn.v
+	module worklib.TopTB:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  SquareRootCarrySelectAdder32_2 srcsa32_0 ( .Sum(SignCompensate), .A({n16, 
+                                         |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4622|41): 1 output port was not connected:
+ncelab: (./multiplier_syn.v,3951): Cout
+
+  SquareRootCarrySelectAdder32_1 srcsa32_1 ( .Sum(TmpResult), .A({1'b0, 
+                                         |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4629|41): 1 output port was not connected:
+ncelab: (./multiplier_syn.v,4255): Cout
+
+  SquareRootCarrySelectAdder32_0 srcsa32_2 ( .Sum(R), .A(TmpResult), .B(
+                                         |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4632|41): 1 output port was not connected:
+ncelab: (./multiplier_syn.v,4560): Cout
+
+  DFFRX1 Counter_reg_1_ ( .D(N11), .CK(Clk), .RN(Rst), .Q(Counter[1]) );
+                      |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4653|22): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,18240): QN
+
+  DFFTRX1 Valid_reg ( .D(n9), .RN(n7), .CK(Clk), .Q(Valid) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4656|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 Ready_reg ( .D(n9), .RN(Counter[3]), .CK(Clk), .Q(Ready) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4657|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_31_ ( .D(tmpR[31]), .RN(n4), .CK(Clk), .Q(R[31]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4658|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_30_ ( .D(tmpR[30]), .RN(n4), .CK(Clk), .Q(R[30]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4659|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_29_ ( .D(tmpR[29]), .RN(n4), .CK(Clk), .Q(R[29]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4660|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_28_ ( .D(tmpR[28]), .RN(n4), .CK(Clk), .Q(R[28]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4661|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_27_ ( .D(tmpR[27]), .RN(n4), .CK(Clk), .Q(R[27]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4662|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_26_ ( .D(tmpR[26]), .RN(n4), .CK(Clk), .Q(R[26]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4663|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_25_ ( .D(tmpR[25]), .RN(n4), .CK(Clk), .Q(R[25]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4664|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_24_ ( .D(tmpR[24]), .RN(n4), .CK(Clk), .Q(R[24]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4665|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_23_ ( .D(tmpR[23]), .RN(n4), .CK(Clk), .Q(R[23]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4666|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_22_ ( .D(tmpR[22]), .RN(n4), .CK(Clk), .Q(R[22]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4667|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_21_ ( .D(tmpR[21]), .RN(n4), .CK(Clk), .Q(R[21]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4668|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_20_ ( .D(tmpR[20]), .RN(n4), .CK(Clk), .Q(R[20]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4669|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_19_ ( .D(tmpR[19]), .RN(n4), .CK(Clk), .Q(R[19]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4670|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_18_ ( .D(tmpR[18]), .RN(n4), .CK(Clk), .Q(R[18]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4671|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_17_ ( .D(tmpR[17]), .RN(n4), .CK(Clk), .Q(R[17]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4672|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_16_ ( .D(tmpR[16]), .RN(n4), .CK(Clk), .Q(R[16]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4673|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_15_ ( .D(tmpR[15]), .RN(n4), .CK(Clk), .Q(R[15]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4674|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_14_ ( .D(tmpR[14]), .RN(n4), .CK(Clk), .Q(R[14]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4675|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_13_ ( .D(tmpR[13]), .RN(n4), .CK(Clk), .Q(R[13]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4676|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_12_ ( .D(tmpR[12]), .RN(n4), .CK(Clk), .Q(R[12]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4677|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_11_ ( .D(tmpR[11]), .RN(n4), .CK(Clk), .Q(R[11]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4678|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_10_ ( .D(tmpR[10]), .RN(n4), .CK(Clk), .Q(R[10]) );
+                  |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4679|18): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_9_ ( .D(tmpR[9]), .RN(n4), .CK(Clk), .Q(R[9]) );
+                 |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4680|17): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_8_ ( .D(tmpR[8]), .RN(n4), .CK(Clk), .Q(R[8]) );
+                 |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4681|17): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_7_ ( .D(tmpR[7]), .RN(n4), .CK(Clk), .Q(R[7]) );
+                 |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4682|17): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_6_ ( .D(tmpR[6]), .RN(n4), .CK(Clk), .Q(R[6]) );
+                 |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4683|17): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_5_ ( .D(tmpR[5]), .RN(n4), .CK(Clk), .Q(R[5]) );
+                 |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4684|17): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_4_ ( .D(tmpR[4]), .RN(n4), .CK(Clk), .Q(R[4]) );
+                 |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4685|17): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_3_ ( .D(tmpR[3]), .RN(n4), .CK(Clk), .Q(R[3]) );
+                 |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4686|17): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_2_ ( .D(tmpR[2]), .RN(n4), .CK(Clk), .Q(R[2]) );
+                 |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4687|17): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_1_ ( .D(tmpR[1]), .RN(n4), .CK(Clk), .Q(R[1]) );
+                 |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4688|17): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 R_reg_0_ ( .D(tmpR[0]), .RN(n4), .CK(Clk), .Q(R[0]) );
+                 |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4689|17): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFRX1 Counter_reg_0_ ( .D(n1), .CK(Clk), .RN(Rst), .Q(Counter[0]) );
+                      |
+ncelab: *W,CUVWSP (./multiplier_syn.v,4692|22): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,18240): QN
+
+	Reading SDF file from location "multiplier_syn.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     multiplier_syn.sdf.X
+		Log file:              
+		Backannotation scope:  TopTB.test
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 7774  Annotated = 63.94% -- No. of Tchecks = 2326  Annotated = 16.17% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        7774	        4971	       63.94
+		       $hold	          64	           0	        0.00
+		      $width	         442	          80	       18.10
+		  $setuphold	        1820	         296	       16.26
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.TopTB:v <0x47970908>
+			streams:   9, words:  8043
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                 2357     833
+		UDPs:                     282      12
+		Primitives:              4445      10
+		Timing outputs:          2250     559
+		Registers:                197     169
+		Scalar wires:            2465       -
+		Expanded wires:            64       3
+		Always blocks:              2       2
+		Initial blocks:             5       5
+		Pseudo assignments:         3       3
+		Timing checks:           2326      50
+		Interconnect:            3737       -
+		Delayed tcheck signals:   114      42
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.BUFX2:v
+Loading snapshot worklib.BUFX2:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_31_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_30_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_29_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_28_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_27_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_26_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_25_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_24_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_23_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_22_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_21_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_20_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_19_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_18_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_17_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_16_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_15_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_14_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_13_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_12_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_11_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_10_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_9_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_8_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_7_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_6_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_5_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_4_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_3_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_2_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_1_
+            Time: 830 PS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& (xSN == 1):830 PS, negedge RN:599 PS,  0.356 : 356 PS,  -0.105 : -105 PS );
+            File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v, line = 19426
+           Scope: TopTB.test.o_0.R_reg_0_
+            Time: 830 PS
+
+a = -32767, b = -32767, a * b =           x
+a = 1000000000000001
+b = 1000000000000001
+a * b = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+a =  13604, b =      0, a * b =  1073676289
+a = 0011010100100100
+b = 0000000000000000
+a * b = 00111111111111110000000000000001
+
+a =  24193, b =      0, a * b =           0
+a = 0101111010000001
+b = 0000000000000000
+a * b = 00000000000000000000000000000000
+
+a = -10743, b =      0, a * b =           0
+a = 1101011000001001
+b = 0000000000000000
+a * b = 00000000000000000000000000000000
+
+a =  22115, b =      0, a * b =           0
+a = 0101011001100011
+b = 0000000000000000
+a * b = 00000000000000000000000000000000
+
+a =  31501, b =      0, a * b =           0
+a = 0111101100001101
+b = 0000000000000000
+a * b = 00000000000000000000000000000000
+
+a = -26227, b =      0, a * b =           0
+a = 1001100110001101
+b = 0000000000000000
+a * b = 00000000000000000000000000000000
+
+a = -31643, b =  21010, a * b =           0
+a = 1000010001100101
+b = 0101001000010010
+a * b = 00000000000000000000000000000000
+
+a =  -7423, b = -13043, a * b =  -664819430
+a = 1110001100000001
+b = 1100110100001101
+a * b = 11011000010111111010100100011010
+
+a =  -3722, b = -12995, a * b =    96818189
+a = 1111000101110110
+b = 1100110100111101
+a * b = 00000101110001010101010000001101
+
+a =  22509, b =  -2164, a * b =    48367390
+a = 0101011111101101
+b = 1111011110001100
+a * b = 00000010111000100000011100011110
+
+a =  -5639, b =   9414, a * b =   -48709476
+a = 1110100111111001
+b = 0010010011000110
+a * b = 11111101000110001100000010011100
+
+a = -31547, b = -11606, a * b =   -53085546
+a = 1000010011000101
+b = 1101001010101010
+a * b = 11111100110101011111101010010110
+
+a =  -2075, b =  29303, a * b =   366134482
+a = 1111011111100101
+b = 0111001001110111
+a * b = 00010101110100101100010011010010
+
+a = -10734, b =  -9329, a * b =   -60803725
+a = 1101011000010010
+b = 1101101110001111
+a * b = 11111100011000000011010101110011
+
+a =  27122, b = -26930, a * b =   100137486
+a = 0110100111110010
+b = 1001011011001110
+a * b = 00000101111101111111101000001110
+
+a =  31464, b =  20165, a * b =  -730395460
+a = 0111101011101000
+b = 0100111011000101
+a * b = 11010100011101110000110010111100
+
+a =  18780, b =  10429, a * b =   634471560
+a = 0100100101011100
+b = 0010100010111101
+a * b = 00100101110100010100010010001000
+
+a =  22573, b =   9829, a * b =   195856620
+a = 0101100000101101
+b = 0010011001100101
+a * b = 00001011101011001000100011101100
+
+a =  25187, b = -30966, a * b =   221870017
+a = 0110001001100011
+b = 1000011100001010
+a * b = 00001101001110010111011111000001
+
+a =   8832, b =   8480, a * b =  -779940642
+a = 0010001010000000
+b = 0010000100100000
+a * b = 11010001100000110000110011011110
+
+a =  17834, b = -13155, a * b =    74895360
+a = 0100010110101010
+b = 1100110010011101
+a * b = 00000100011101101101000000000000
+
+a =  16022, b = -18413, a * b =  -234606270
+a = 0011111010010110
+b = 1011100000010011
+a * b = 11110010000001000011000101000010
+
+a =  14349, b = -10669, a * b =  -295013086
+a = 0011100000001101
+b = 1101011001010011
+a * b = 11101110011010100111010100100010
+
+a =  -8853, b =  10965, a * b =  -153089481
+a = 1101110101101011
+b = 0010101011010101
+a * b = 11110110111000000000101000110111
+
+a =  18946, b =  16046, a * b =   -97073145
+a = 0100101000000010
+b = 0011111010101110
+a * b = 11111010001101101100100000000111
+
+a =  -5859, b =  29391, a * b =   304007516
+a = 1110100100011101
+b = 0111001011001111
+a * b = 00010010000111101100100101011100
+
+a =  18723, b =  25866, a * b =  -172201869
+a = 0100100100100011
+b = 0110010100001010
+a * b = 11110101101111000110100001110011
+
+a =   2762, b =  19516, a * b =   484289118
+a = 0000101011001010
+b = 0100110000111100
+a * b = 00011100110111011010101001011110
+
+a = -16910, b =  24970, a * b =    53903192
+a = 1011110111110010
+b = 0110000110001010
+a * b = 00000011001101100111111101011000
+
+a = -19647, b =  13528, a * b =  -422242700
+a = 1011001101000001
+b = 0011010011011000
+a * b = 11100110110101010001011001110100
+
+a =  -3208, b =   4745, a * b =  -265784616
+a = 1111001101111000
+b = 0001001010001001
+a * b = 11110000001010000111001011011000
+
+a =   3563, b =  26038, a * b =   -15221960
+a = 0000110111101011
+b = 0110010110110110
+a * b = 11111111000101111011101100111000
+
+a =  -1594, b =   5038, a * b =    92773394
+a = 1111100111000110
+b = 0001001110101110
+a * b = 00000101100001111001110000010010
+
+a =    700, b =  -8918, a * b =    -8030572
+a = 0000001010111100
+b = 1101110100101010
+a * b = 11111111100001010111011010010100
+
+a = -26101, b = -16783, a * b =    -6242600
+a = 1001101000001011
+b = 1011111001110001
+a * b = 11111111101000001011111011011000
+
+a =  16773, b =  21839, a * b =   438053083
+a = 0100000110000101
+b = 0101010101001111
+a * b = 00011010000111000010100011011011
+
+a =  24635, b =  13114, a * b =   366305547
+a = 0110000000111011
+b = 0011001100111010
+a * b = 00010101110101010110000100001011
+
+a =  12926, b =  19221, a * b =   323063390
+a = 0011001001111110
+b = 0100101100010101
+a * b = 00010011010000011000111001011110
+
+a = -25615, b =  19417, a * b =   248450646
+a = 1001101111110001
+b = 0100101111011001
+a * b = 00001110110011110000111001010110
+
+a =   1890, b =  -1204, a * b =  -497366455
+a = 0000011101100010
+b = 1111101101001100
+a * b = 11100010010110101100101001001001
+
+a =  21919, b = -24177, a * b =    -2275560
+a = 0101010110011111
+b = 1010000110001111
+a * b = 11111111110111010100011100011000
+
+a = -22024, b =  24759, a * b =  -529935663
+a = 1010100111111000
+b = 0110000010110111
+a * b = 11100000011010011101001011010001
+
+a =  22175, b = -27556, a * b =  -545292216
+a = 0101011010011111
+b = 1001010001011100
+a * b = 11011111011111111000000001001000
+
+a = -16293, b =  14217, a * b =  -611054300
+a = 1100000001011011
+b = 0011011110001001
+a * b = 11011011100101000000110100100100
+
+a =  12873, b =  16080, a * b =  -231637581
+a = 0011001001001001
+b = 0011111011010000
+a * b = 11110010001100010111110110110011
+
+a = -16169, b =   -943, a * b =   206997840
+a = 1100000011010111
+b = 1111110001010001
+a * b = 00001100010101101000100101010000
+
+a =  12182, b =  32524, a * b =    15247367
+a = 0010111110010110
+b = 0111111100001100
+a * b = 00000000111010001010100000000111
+
+a = -12606, b =  -4664, a * b =   396207368
+a = 1100111011000010
+b = 1110110111001000
+a * b = 00010111100111011010010100001000
+
+a =  23159, b =  -4803, a * b =    58794384
+a = 0101101001110111
+b = 1110110100111101
+a * b = 00000011100000010010000110010000
+
+a =  -9454, b =    126, a * b =  -111232677
+a = 1101101100010010
+b = 0000000001111110
+a * b = 11111001010111101011100101011011
+
+a = -32403, b =  -6343, a * b =    -1191204
+a = 1000000101101101
+b = 1110011100111001
+a * b = 11111111111011011101001011011100
+
+a = -28897, b =  -2349, a * b =   205532229
+a = 1000111100011111
+b = 1111011011010011
+a * b = 00001100010000000010110001000101
+
+a =  12165, b = -30600, a * b =    67879053
+a = 0010111110000101
+b = 1000100001111000
+a * b = 00000100000010111100000010001101
+
+a =  22875, b =  19273, a * b =  -372249000
+a = 0101100101011011
+b = 0100101101001001
+a * b = 11101001110011111110111001011000
+
+a = -20929, b = -20694, a * b =   440869875
+a = 1010111000111111
+b = 1010111100101010
+a * b = 00011010010001110010001111110011
+
+a =  25432, b =  14470, a * b =   433104726
+a = 0110001101011000
+b = 0011100010000110
+a * b = 00011001110100001010011101010110
+
+a =   3214, b =  -3428, a * b =   368001040
+a = 0000110010001110
+b = 1111001010011100
+a * b = 00010101111011110100000000010000
+
+a = -26118, b = -17370, a * b =   -11017592
+a = 1001100111111010
+b = 1011110000100110
+a * b = 11111111010101111110001010001000
+
+a =   6003, b = -19293, a * b =   453669660
+a = 0001011101110011
+b = 1011010010100011
+a * b = 00011011000010100111001100011100
+
+a = -22481, b = -27981, a * b =  -115815879
+a = 1010100000101111
+b = 1001001010110011
+a * b = 11111001000110001100101000111001
+
+a =  22111, b =   3396, a * b =   629040861
+a = 0101011001011111
+b = 0000110101000100
+a * b = 00100101011111100110011011011101
+
+a =   -521, b =  14027, a * b =    75088956
+a = 1111110111110111
+b = 0011011011001011
+a * b = 00000100011110011100010000111100
+
+a =   6886, b =  -9382, a * b =    -7308067
+a = 0001101011100110
+b = 1101101101011010
+a * b = 11111111100100000111110011011101
+
+a = -16087, b =  -7443, a * b =   -64604452
+a = 1100000100101001
+b = 1110001011101101
+a * b = 11111100001001100011011011011100
+
+a =  27866, b = -18843, a * b =   119735541
+a = 0110110011011010
+b = 1011011001100101
+a * b = 00000111001000110000010011110101
+
+a =  -7499, b = -27425, a * b =  -525079038
+a = 1110001010110101
+b = 1001010011011111
+a * b = 11100000101100111110111000000010
+
+a =   6521, b =   -188, a * b =   205660075
+a = 0001100101111001
+b = 1111111101000100
+a * b = 00001100010000100001111110101011
+
+a =   3280, b =   2858, a * b =    -1225948
+a = 0000110011010000
+b = 0000101100101010
+a * b = 11111111111011010100101100100100
+
+a = -21077, b = -12530, a * b =     9374240
+a = 1010110110101011
+b = 1100111100001110
+a * b = 00000000100011110000101000100000
+
+a = -21028, b = -17254, a * b =   264094810
+a = 1010110111011100
+b = 1011110010011010
+a * b = 00001111101111011100010001011010
+
+a =  29437, b =    707, a * b =   362817112
+a = 0111001011111101
+b = 0000001011000011
+a * b = 00010101101000000010011001011000
+
+a =  -4778, b =  -5810, a * b =    20811959
+a = 1110110101010110
+b = 1110100101001110
+a * b = 00000001001111011001000010110111
+
+a =  30311, b =  13322, a * b =    27760180
+a = 0111011001100111
+b = 0011010000001010
+a * b = 00000001101001111001011000110100
+
+a = -17994, b = -30152, a * b =   403803142
+a = 1011100110110110
+b = 1000101000111000
+a * b = 00011000000100011000110000000110
+
+a = -30855, b = -15176, a * b =   542555088
+a = 1000011101111001
+b = 1100010010111000
+a * b = 00100000010101101011101111010000
+
+a = -16492, b =  23955, a * b =   468255480
+a = 1011111110010100
+b = 0101110110010011
+a * b = 00011011111010010000001011111000
+
+a =  11268, b = -13735, a * b =  -395065860
+a = 0010110000000100
+b = 1100101001011001
+a * b = 11101000011100111100010111111100
+
+a =  27099, b =  -8627, a * b =  -154765980
+a = 0110100111011011
+b = 1101111001001101
+a * b = 11110110110001100111010101100100
+
+a = -18471, b =   9837, a * b =  -233783073
+a = 1011011111011001
+b = 0010011001101101
+a * b = 11110010000100001100000011011111
+
+a =  -7562, b =  18890, a * b =  -181699227
+a = 1110001001110110
+b = 0100100111001010
+a * b = 11110101001010110111110101100101
+
+a =  11702, b =  29077, a * b =  -142846180
+a = 0010110110110110
+b = 0111000110010101
+a * b = 11110111011111000101011100011100
+
+a =   6726, b = -25852, a * b =   340259054
+a = 0001101001000110
+b = 1001101100000100
+a * b = 00010100010001111111000011101110
+
+a =  25079, b =   1897, a * b =  -173880552
+a = 0110000111110111
+b = 0000011101101001
+a * b = 11110101101000101100101100011000
+
+a = -17740, b = -29304, a * b =    47574863
+a = 1011101010110100
+b = 1000110110001000
+a * b = 00000010110101011110111101001111
+
+a =  -9944, b =   1069, a * b =   519852960
+a = 1101100100101000
+b = 0000010000101101
+a * b = 00011110111111000101001110100000
+
+a =  12487, b = -25554, a * b =   -10630136
+a = 0011000011000111
+b = 1001110000101110
+a * b = 11111111010111011100110000001000
+
+a =  -7160, b =  17692, a * b =  -319092798
+a = 1110010000001000
+b = 0100010100011100
+a * b = 11101100111110110000011111000010
+
+a = -22787, b =   1833, a * b =  -126674720
+a = 1010011011111101
+b = 0000011100101001
+a * b = 11111000011100110001100011100000
+
+a = -28644, b =  26502, a * b =   -41768571
+a = 1001000000011100
+b = 0110011110000110
+a * b = 11111101100000101010100110000101
+
+a =   2266, b = -14787, a * b =  -759123288
+a = 0000100011011010
+b = 1100011000111101
+a * b = 11010010110000001011001010101000
+
+a = -22682, b = -15248, a * b =   -33507342
+a = 1010011101100110
+b = 1100010001110000
+a * b = 11111110000000001011011111110010
+
+a =   1139, b = -26182, a * b =   345855136
+a = 0000010001110011
+b = 1001100110111010
+a * b = 00010100100111010101010010100000
+
+a = -19618, b =  31226, a * b =   -29821298
+a = 1011001101011110
+b = 0111100111111010
+a * b = 11111110001110001111011010001110
+
+a =   1493, b =  -2534, a * b =  -612591668
+a = 0000010111010101
+b = 1111011000011010
+a * b = 11011011011111001001011111001100
+
+a =    185, b =  24887, a * b =    -3783262
+a = 0000000010111001
+b = 0110000100110111
+a * b = 11111111110001100100010110100010
+
+a =  14230, b =   8640, a * b =     4604095
+a = 0011011110010110
+b = 0010000111000000
+a * b = 00000000010001100100000010111111
+
+a = -24794, b =   6838, a * b =   122947200
+a = 1001111100100110
+b = 0001101010110110
+a * b = 00000111010101000000011010000000
+
+a = -31875, b =   4060, a * b =  -169541372
+a = 1000001101111101
+b = 0000111111011100
+a * b = 11110101111001010000000100000100
+
+a =  22406, b =   -136, a * b =  -129412500
+a = 0101011110000110
+b = 1111111101111000
+a * b = 11111000010010010101001001101100
+
+a = -25730, b = -32549, a * b =    -3047216
+a = 1001101101111110
+b = 1000000011011011
+a * b = 11111111110100011000000011010000
+
+a = -18737, b =  11129, a * b =   837485770
+a = 1011011011001111
+b = 0010101101111001
+a * b = 00110001111010110000010011001010
+
+a =  -6918, b =  -4511, a * b =  -208524073
+a = 1110010011111010
+b = 1110111001100001
+a * b = 11110011100100100010110011010111
+
+a =   2327, b =  30881, a * b =    31207098
+a = 0000100100010111
+b = 0111100010100001
+a * b = 00000001110111000010111010111010
+
+a = -28282, b = -27056, a * b =    71860087
+a = 1001000110000110
+b = 1001011001010000
+a * b = 00000100010010000111111101110111
+
+a =  23029, b = -30667, a * b =   765197792
+a = 0101100111110101
+b = 1000100000110101
+a * b = 00101101100110111111110111100000
+
+a = -30167, b =  30145, a * b =  -706230343
+a = 1000101000101001
+b = 0111010111000001
+a * b = 11010101111001111100011110111001
+
+a =  29893, b = -19304, a * b =  -909384215
+a = 0111010011000101
+b = 1011010010011000
+a * b = 11001001110010111110010111101001
+
+a =  31563, b =  17011, a * b =  -577054472
+a = 0111101101001011
+b = 0100001001110011
+a * b = 11011101100110101101100011111000
+
+a =  -6420, b =   5770, a * b =   536918193
+a = 1110011011101100
+b = 0001011010001010
+a * b = 00100000000000001011100010110001
+
+a = -11954, b = -32600, a * b =   -37043400
+a = 1101000101001110
+b = 1000000010101000
+a * b = 11111101110010101100001100111000
+
+a =   -599, b = -29535, a * b =   389700400
+a = 1111110110101001
+b = 1000110010100001
+a * b = 00010111001110100101101100110000
+
+Simulation complete via $finish(1) at time 1663320 PS + 0
+./tb_syn.v:53         $finish;
+ncsim> exit
+TOOL:	ncverilog	14.10-s005: Exiting on Jun 29, 2018 at 17:43:10 CST  (total: 00:00:02)

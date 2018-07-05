@@ -1,0 +1,29 @@
+****************************************
+Report : area
+Design : traffic_light
+Version: N-2017.09-SP2
+Date   : Sun May 27 19:31:42 2018
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    slow (File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                           30
+Number of nets:                           101
+Number of cells:                           75
+Number of combinational cells:             53
+Number of sequential cells:                20
+Number of macros/black boxes:               0
+Number of buf/inv:                         12
+Number of references:                       2
+
+Combinational area:                342.874797
+Buf/Inv area:                       40.737599
+Noncombinational area:             538.075802
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   880.950599
+Total area:                 undefined

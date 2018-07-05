@@ -1,0 +1,46 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : HW1_1
+Version: N-2017.09-SP2
+Date   : Fri Apr 27 17:33:17 2018
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: Add_ctrl (input port)
+  Endpoint: Overflow (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  Add_ctrl (in)                            0.00       0.00 r
+  U27/Y (CLKINVX1)                         0.21       0.21 f
+  U26/Y (XOR2X1)                           0.24       0.45 f
+  CLL1/B0 (CLL_1)                          0.00       0.45 f
+  CLL1/U14/Y (XOR2X1)                      0.19       0.64 r
+  CLL1/U13/Y (AOI22X1)                     0.11       0.75 f
+  CLL1/U10/Y (OA21XL)                      0.29       1.04 f
+  CLL1/U7/Y (OA21XL)                       0.30       1.34 f
+  CLL1/U5/Y (OAI2BB2XL)                    0.27       1.61 r
+  CLL1/C_out (CLL_1)                       0.00       1.61 r
+  CLL2/C0 (CLL_0)                          0.00       1.61 r
+  CLL2/U13/Y (AOI22X1)                     0.12       1.73 f
+  CLL2/U10/Y (OA21XL)                      0.29       2.03 f
+  CLL2/U7/Y (OA21XL)                       0.30       2.32 f
+  CLL2/U1/Y (XOR2X1)                       0.17       2.50 f
+  CLL2/S3 (CLL_0)                          0.00       2.50 f
+  U16/Y (NAND2BX1)                         0.18       2.68 f
+  U15/Y (MXI2X1)                           0.10       2.78 r
+  Overflow (out)                           0.00       2.78 r
+  data arrival time                                   2.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+

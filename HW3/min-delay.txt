@@ -1,0 +1,43 @@
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+        -sort_by group
+Design : traffic_light
+Version: N-2017.09-SP2
+Date   : Sun May 27 19:37:27 2018
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: Counter/count_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Counter/count_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  Counter/count_reg_3_/CK (DFFTRX1)        0.00      10.00 r
+  Counter/count_reg_3_/QN (DFFTRX1)        0.36      10.36 r
+  Counter/U26/Y (OAI21XL)                  0.09      10.45 f
+  Counter/count_reg_3_/D (DFFTRX1)         0.00      10.45 f
+  data arrival time                                  10.45
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  Counter/count_reg_3_/CK (DFFTRX1)        0.00      10.00 r
+  library hold time                       -0.02       9.98
+  data required time                                  9.98
+  -----------------------------------------------------------
+  data required time                                  9.98
+  data arrival time                                 -10.45
+  -----------------------------------------------------------
+  slack (MET)                                         0.46
+
+

@@ -1,0 +1,122 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Top
+Version: N-2017.09-SP2
+Date   : Thu Jun  7 22:38:52 2018
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: X[0] (input port)
+  Endpoint: R[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  X[0] (in)                                               0.00       0.00 f
+  br4/InputA[0] (BoothRadix4)                             0.00       0.00 f
+  br4/U367/Y (CLKINVX1)                                   0.22       0.22 r
+  br4/add_49/A[1] (BoothRadix4_DW01_inc_0)                0.00       0.22 r
+  br4/add_49/U1_1_2/CO (ADDHXL)                           0.20       0.43 r
+  br4/add_49/U1_1_3/CO (ADDHXL)                           0.18       0.60 r
+  br4/add_49/U1_1_4/CO (ADDHXL)                           0.18       0.78 r
+  br4/add_49/U1_1_5/CO (ADDHXL)                           0.18       0.95 r
+  br4/add_49/U1_1_6/CO (ADDHXL)                           0.18       1.13 r
+  br4/add_49/U1_1_7/CO (ADDHXL)                           0.18       1.31 r
+  br4/add_49/U1_1_8/CO (ADDHXL)                           0.18       1.48 r
+  br4/add_49/U1_1_9/CO (ADDHXL)                           0.18       1.66 r
+  br4/add_49/U1_1_10/CO (ADDHXL)                          0.18       1.83 r
+  br4/add_49/U1_1_11/CO (ADDHXL)                          0.18       2.01 r
+  br4/add_49/U1_1_12/CO (ADDHXL)                          0.18       2.18 r
+  br4/add_49/U1_1_13/CO (ADDHXL)                          0.18       2.36 r
+  br4/add_49/U1_1_14/CO (ADDHXL)                          0.18       2.54 r
+  br4/add_49/U1_1_15/S (ADDHXL)                           0.23       2.76 r
+  br4/add_49/SUM[15] (BoothRadix4_DW01_inc_0)             0.00       2.76 r
+  br4/U343/Y (CLKINVX1)                                   0.21       2.97 f
+  br4/U341/Y (OAI222XL)                                   0.39       3.36 r
+  br4/PP0[15] (BoothRadix4)                               0.00       3.36 r
+  wt16x16r4/PP0[15] (WallaceTree16X16Radix4)              0.00       3.36 r
+  wt16x16r4/fa_A_0_13/A (FA_68)                           0.00       3.36 r
+  wt16x16r4/fa_A_0_13/ha1/A (HA_137)                      0.00       3.36 r
+  wt16x16r4/fa_A_0_13/ha1/U1/Y (XOR2X1)                   0.27       3.63 f
+  wt16x16r4/fa_A_0_13/ha1/S (HA_137)                      0.00       3.63 f
+  wt16x16r4/fa_A_0_13/ha2/A (HA_136)                      0.00       3.63 f
+  wt16x16r4/fa_A_0_13/ha2/U2/Y (AND2X1)                   0.22       3.85 f
+  wt16x16r4/fa_A_0_13/ha2/Cout (HA_136)                   0.00       3.85 f
+  wt16x16r4/fa_A_0_13/U1/Y (OR2X1)                        0.25       4.10 f
+  wt16x16r4/fa_A_0_13/Cout (FA_68)                        0.00       4.10 f
+  wt16x16r4/fa_B_0_13/B (FA_43)                           0.00       4.10 f
+  wt16x16r4/fa_B_0_13/ha1/B (HA_87)                       0.00       4.10 f
+  wt16x16r4/fa_B_0_13/ha1/U1/Y (XOR2X1)                   0.15       4.25 f
+  wt16x16r4/fa_B_0_13/ha1/S (HA_87)                       0.00       4.25 f
+  wt16x16r4/fa_B_0_13/ha2/A (HA_86)                       0.00       4.25 f
+  wt16x16r4/fa_B_0_13/ha2/U2/Y (AND2X1)                   0.20       4.45 f
+  wt16x16r4/fa_B_0_13/ha2/Cout (HA_86)                    0.00       4.45 f
+  wt16x16r4/fa_B_0_13/U1/Y (OR2X1)                        0.25       4.71 f
+  wt16x16r4/fa_B_0_13/Cout (FA_43)                        0.00       4.71 f
+  wt16x16r4/fa_C_0_13/B (FA_19)                           0.00       4.71 f
+  wt16x16r4/fa_C_0_13/ha1/B (HA_39)                       0.00       4.71 f
+  wt16x16r4/fa_C_0_13/ha1/U1/Y (XOR2X1)                   0.15       4.86 f
+  wt16x16r4/fa_C_0_13/ha1/S (HA_39)                       0.00       4.86 f
+  wt16x16r4/fa_C_0_13/ha2/A (HA_38)                       0.00       4.86 f
+  wt16x16r4/fa_C_0_13/ha2/U2/Y (AND2X1)                   0.20       5.06 f
+  wt16x16r4/fa_C_0_13/ha2/Cout (HA_38)                    0.00       5.06 f
+  wt16x16r4/fa_C_0_13/U1/Y (OR2X1)                        0.25       5.31 f
+  wt16x16r4/fa_C_0_13/Cout (FA_19)                        0.00       5.31 f
+  wt16x16r4/fa_D_0_13/B (FA_9)                            0.00       5.31 f
+  wt16x16r4/fa_D_0_13/ha1/B (HA_19)                       0.00       5.31 f
+  wt16x16r4/fa_D_0_13/ha1/U1/Y (XOR2X1)                   0.15       5.47 f
+  wt16x16r4/fa_D_0_13/ha1/S (HA_19)                       0.00       5.47 f
+  wt16x16r4/fa_D_0_13/ha2/A (HA_18)                       0.00       5.47 f
+  wt16x16r4/fa_D_0_13/ha2/U2/Y (AND2X1)                   0.20       5.67 f
+  wt16x16r4/fa_D_0_13/ha2/Cout (HA_18)                    0.00       5.67 f
+  wt16x16r4/fa_D_0_13/U1/Y (OR2X1)                        0.28       5.95 f
+  wt16x16r4/fa_D_0_13/Cout (FA_9)                         0.00       5.95 f
+  wt16x16r4/OPB[19] (WallaceTree16X16Radix4)              0.00       5.95 f
+  srcsa32_1/B[19] (SquareRootCarrySelectAdder32_1)        0.00       5.95 f
+  srcsa32_1/csa7_0/B[1] (CarrySelectAdder7_3)             0.00       5.95 f
+  srcsa32_1/csa7_0/U47/Y (NOR2X1)                         0.15       6.10 r
+  srcsa32_1/csa7_0/U44/Y (OAI21XL)                        0.13       6.23 f
+  srcsa32_1/csa7_0/U43/Y (OA22X1)                         0.41       6.63 f
+  srcsa32_1/csa7_0/U41/Y (OA22X1)                         0.40       7.04 f
+  srcsa32_1/csa7_0/U40/Y (AO21X1)                         0.28       7.32 f
+  srcsa32_1/csa7_0/U39/Y (OA21XL)                         0.18       7.50 f
+  srcsa32_1/csa7_0/U31/Y (OAI2BB1X1)                      0.19       7.69 f
+  srcsa32_1/csa7_0/U30/Y (OAI21XL)                        0.20       7.89 r
+  srcsa32_1/csa7_0/U29/Y (OAI2BB1X1)                      0.11       7.99 f
+  srcsa32_1/csa7_0/U28/Y (OAI21XL)                        0.20       8.20 r
+  srcsa32_1/csa7_0/U27/Y (OAI2BB1X1)                      0.12       8.32 f
+  srcsa32_1/csa7_0/Cout (CarrySelectAdder7_3)             0.00       8.32 f
+  srcsa32_1/csa7_1/Cin (CarrySelectAdder7_2)              0.00       8.32 f
+  srcsa32_1/csa7_1/U21/Y (CLKINVX1)                       0.14       8.45 r
+  srcsa32_1/csa7_1/U20/Y (OA21XL)                         0.20       8.66 r
+  srcsa32_1/csa7_1/U19/Y (MXI2X1)                         0.21       8.87 f
+  srcsa32_1/csa7_1/Sum[1] (CarrySelectAdder7_2)           0.00       8.87 f
+  srcsa32_1/Sum[26] (SquareRootCarrySelectAdder32_1)      0.00       8.87 f
+  srcsa32_2/A[26] (SquareRootCarrySelectAdder32_0)        0.00       8.87 f
+  srcsa32_2/csa7_1/A[1] (CarrySelectAdder7_0)             0.00       8.87 f
+  srcsa32_2/csa7_1/U47/Y (NOR2X1)                         0.16       9.03 r
+  srcsa32_2/csa7_1/U44/Y (OAI21XL)                        0.13       9.16 f
+  srcsa32_2/csa7_1/U43/Y (OA22X1)                         0.41       9.56 f
+  srcsa32_2/csa7_1/U41/Y (OA22X1)                         0.40       9.97 f
+  srcsa32_2/csa7_1/U40/Y (AO21X1)                         0.28      10.25 f
+  srcsa32_2/csa7_1/U39/Y (OA21XL)                         0.18      10.43 f
+  srcsa32_2/csa7_1/U31/Y (OAI2BB1X1)                      0.19      10.62 f
+  srcsa32_2/csa7_1/U30/Y (OAI21XL)                        0.20      10.82 r
+  srcsa32_2/csa7_1/U29/Y (OAI2BB1X1)                      0.11      10.92 f
+  srcsa32_2/csa7_1/U1/Y (XNOR2X1)                         0.14      11.06 f
+  srcsa32_2/csa7_1/Sum[6] (CarrySelectAdder7_0)           0.00      11.06 f
+  srcsa32_2/Sum[31] (SquareRootCarrySelectAdder32_0)      0.00      11.06 f
+  R[31] (out)                                             0.00      11.06 f
+  data arrival time                                                 11.06
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+

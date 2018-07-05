@@ -1,0 +1,28 @@
+****************************************
+Report : area
+Design : multiplier
+Version: N-2017.09-SP2
+Date   : Fri Jun 29 17:53:05 2018
+****************************************
+
+Library(s) Used:
+
+    slow (File: /data/software/PROCESS/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                         2458
+Number of nets:                          4024
+Number of cells:                         1895
+Number of combinational cells:           1518
+Number of sequential cells:                73
+Number of macros/black boxes:               0
+Number of buf/inv:                        192
+Number of references:                       2
+
+Combinational area:              13698.017753
+Buf/Inv area:                      694.236589
+Noncombinational area:            1108.402218
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 14806.419971
+Total area:                 undefined

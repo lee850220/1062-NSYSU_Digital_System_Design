@@ -1,0 +1,115 @@
+ncverilog: 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-s005: Started on May 27, 2018 at 20:29:58 CST
+ncverilog
+	tb_HW3_syn.v
+	+access+r
+Recompiling... reason: file './HW3_syn.sdf' is newer than expected.
+	expected: Sun May 27 16:03:09 2018
+	actual:   Sun May 27 20:26:32 2018
+file: tb_HW3_syn.v
+	module worklib.tb_HW3_syn:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX1 ST_out_reg_1_ ( .D(ST[1]), .CK(clk), .RN(n10), .Q(ST_out[1]) );
+                     |
+ncelab: *W,CUVWSP (./HW3_syn.v,24|21): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,18240): QN
+
+  DFFRX1 ST_out_reg_0_ ( .D(ST[0]), .CK(clk), .RN(n10), .Q(ST_out[0]) );
+                     |
+ncelab: *W,CUVWSP (./HW3_syn.v,25|21): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,18240): QN
+
+  TLATX1 nxt_state_reg_0_ ( .G(N29), .D(N32), .Q(nxt_state[0]) );
+                        |
+ncelab: *W,CUVWSP (./HW3_syn.v,26|24): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,26199): QN
+
+  TLATX1 nxt_state_reg_1_ ( .G(N29), .D(N33), .Q(nxt_state[1]) );
+                        |
+ncelab: *W,CUVWSP (./HW3_syn.v,27|24): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,26199): QN
+
+  TLATX1 nxt_state_reg_2_ ( .G(N29), .D(N34), .Q(nxt_state[2]) );
+                        |
+ncelab: *W,CUVWSP (./HW3_syn.v,28|24): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,26199): QN
+
+  TLATX1 ST_reg_1_ ( .G(N29), .D(n2), .Q(ST[1]) );
+                 |
+ncelab: *W,CUVWSP (./HW3_syn.v,29|17): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,26199): QN
+
+  TLATX1 ST_reg_0_ ( .G(N29), .D(n4), .Q(ST[0]) );
+                 |
+ncelab: *W,CUVWSP (./HW3_syn.v,30|17): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,26199): QN
+
+  EDFFTRX1 Trigger_out_reg_0_ ( .RN(n27), .D(n1), .E(n12), .CK(clk), .Q(
+                            |
+ncelab: *W,CUVWSP (./HW3_syn.v,73|28): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19874): QN
+
+  EDFFTRX1 Trigger_out_reg_1_ ( .RN(n27), .D(n3), .E(n12), .CK(clk), .Q(
+                            |
+ncelab: *W,CUVWSP (./HW3_syn.v,75|28): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19874): QN
+
+  DFFTRX1 count_reg_5_ ( .D(N15), .RN(n25), .CK(clk), .Q(count[5]) );
+                     |
+ncelab: *W,CUVWSP (./HW3_syn.v,81|21): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+  DFFTRX1 count_reg_4_ ( .D(N14), .RN(n25), .CK(clk), .Q(count[4]) );
+                     |
+ncelab: *W,CUVWSP (./HW3_syn.v,83|21): 1 output port was not connected:
+ncelab: (/data/software/PROCESS/CBDK_IC_Contest_v2.1/Verilog/tsmc13.v,19387): QN
+
+	Reading SDF file from location "HW3_syn.sdf"
+	Compiled SDF file "HW3_syn.sdf.X" older than source SDF file "HW3_syn.sdf".
+	Recompiling.
+	Writing compiled SDF file to "HW3_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     HW3_syn.sdf.X
+		Log file:              
+		Backannotation scope:  tb_HW3_syn.TL
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 3018  Annotated = 6.06% -- No. of Tchecks = 2086  Annotated = 7.57% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        3018	         183	        6.06
+		       $hold	          64	           0	        0.00
+		      $width	         398	          40	       10.05
+		  $setuphold	        1624	         118	        7.27
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.tb_HW3_syn:v <0x36d9523a>
+			streams:   5, words:  2242
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  579     531
+		UDPs:                     261      12
+		Primitives:              1966      10
+		Timing outputs:           723     563
+		Registers:                173     166
+		Scalar wires:             898       -
+		Always blocks:              1       1
+		Initial blocks:             4       4
+		Timing checks:           2086      32
+		Interconnect:             174       -
+		Delayed tcheck signals:    42      19
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.BUFX2:v
+Loading snapshot worklib.BUFX2:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 1260 NS + 0
+./tb_HW3_syn.v:38         #1200 $finish;
+ncsim> exit
+TOOL:	ncverilog	14.10-s005: Exiting on May 27, 2018 at 20:30:00 CST  (total: 00:00:02)

@@ -1,0 +1,276 @@
+ncverilog: 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-s005: Started on Apr 28, 2018 at 00:40:53 CST
+ncverilog
+	HW1_1_RTL_tb.v
+	+access+r
+Recompiling... reason: file './HW1_1_RTL_syn.v' is newer than expected.
+	expected: Fri Apr 27 23:41:54 2018
+	actual:   Sat Apr 28 00:33:48 2018
+file: HW1_1_RTL_tb.v
+	module worklib.HW1_1_RTL_DW01_addsub_0:v
+		errors: 0, warnings: 0
+	module worklib.HW1_1_RTL_syn:v
+		errors: 0, warnings: 0
+	module worklib.test_HW1_1_RTL:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Reading SDF file from location "HW1_1_RTL_syn.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     HW1_1_RTL_syn.sdf.X
+		Log file:              
+		Backannotation scope:  test_HW1_1_RTL.uut2
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 3052  Annotated = 5.54% -- No. of Tchecks = 1978  Annotated = 0.00% 
+  assign A[7] = \A[7] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,20|7): The interconnect source test_HW1_1_RTL.uut2.A[7] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U1_7.A.  The port annotation will still occur.
+  assign B[0] = \B[0] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,35|7): The interconnect source test_HW1_1_RTL.uut2.B[0] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U9.A.  The port annotation will still occur.
+  assign carry[0] = ADD_SUB;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,36|7): The interconnect source test_HW1_1_RTL.uut2.U9.Y is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U9.B.  The port annotation will still occur.
+  assign B[1] = \B[1] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,34|7): The interconnect source test_HW1_1_RTL.uut2.B[1] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U8.A.  The port annotation will still occur.
+  assign carry[0] = ADD_SUB;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,36|7): The interconnect source test_HW1_1_RTL.uut2.U9.Y is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U8.B.  The port annotation will still occur.
+  assign B[2] = \B[2] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,33|7): The interconnect source test_HW1_1_RTL.uut2.B[2] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U7.A.  The port annotation will still occur.
+  assign carry[0] = ADD_SUB;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,36|7): The interconnect source test_HW1_1_RTL.uut2.U9.Y is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U7.B.  The port annotation will still occur.
+  assign B[3] = \B[3] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,32|7): The interconnect source test_HW1_1_RTL.uut2.B[3] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U6.A.  The port annotation will still occur.
+  assign carry[0] = ADD_SUB;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,36|7): The interconnect source test_HW1_1_RTL.uut2.U9.Y is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U6.B.  The port annotation will still occur.
+  assign B[4] = \B[4] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,31|7): The interconnect source test_HW1_1_RTL.uut2.B[4] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U5.A.  The port annotation will still occur.
+  assign carry[0] = ADD_SUB;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,36|7): The interconnect source test_HW1_1_RTL.uut2.U9.Y is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U5.B.  The port annotation will still occur.
+  assign B[5] = \B[5] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,30|7): The interconnect source test_HW1_1_RTL.uut2.B[5] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U4.A.  The port annotation will still occur.
+  assign carry[0] = ADD_SUB;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,36|7): The interconnect source test_HW1_1_RTL.uut2.U9.Y is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U4.B.  The port annotation will still occur.
+  assign B[6] = \B[6] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,29|7): The interconnect source test_HW1_1_RTL.uut2.B[6] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U3.A.  The port annotation will still occur.
+  assign carry[0] = ADD_SUB;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,36|7): The interconnect source test_HW1_1_RTL.uut2.U9.Y is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U3.B.  The port annotation will still occur.
+  assign B[7] = \B[7] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,28|7): The interconnect source test_HW1_1_RTL.uut2.B[7] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U2.A.  The port annotation will still occur.
+  assign carry[0] = ADD_SUB;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,36|7): The interconnect source test_HW1_1_RTL.uut2.U9.Y is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U2.B.  The port annotation will still occur.
+  assign carry[0] = ADD_SUB;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,36|7): The interconnect source test_HW1_1_RTL.uut2.U9.Y is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U1.A.  The port annotation will still occur.
+  assign A[6] = \A[6] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,21|7): The interconnect source test_HW1_1_RTL.uut2.A[6] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U1_6.A.  The port annotation will still occur.
+  assign A[0] = \A[0] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,27|7): The interconnect source test_HW1_1_RTL.uut2.A[0] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U1_0.A.  The port annotation will still occur.
+  assign carry[0] = ADD_SUB;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,36|7): The interconnect source test_HW1_1_RTL.uut2.U9.Y is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U1_0.CI.  The port annotation will still occur.
+  assign A[1] = \A[1] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,26|7): The interconnect source test_HW1_1_RTL.uut2.A[1] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U1_1.A.  The port annotation will still occur.
+  assign A[2] = \A[2] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,25|7): The interconnect source test_HW1_1_RTL.uut2.A[2] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U1_2.A.  The port annotation will still occur.
+  assign A[3] = \A[3] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,24|7): The interconnect source test_HW1_1_RTL.uut2.A[3] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U1_3.A.  The port annotation will still occur.
+  assign A[4] = \A[4] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,23|7): The interconnect source test_HW1_1_RTL.uut2.A[4] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U1_4.A.  The port annotation will still occur.
+  assign A[5] = \A[5] ;
+       |
+ncelab: *W,SDFNCAP (./HW1_1_RTL_syn.v,22|7): The interconnect source test_HW1_1_RTL.uut2.A[5] is separated by a unidirectional continuous assign from the destination test_HW1_1_RTL.uut2.r301.U1_5.A.  The port annotation will still occur.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.HW1_1_RTL_DW01_addsub_0:v <0x621557b8>
+			streams:   0, words:     0
+		worklib.HW1_1_RTL_syn:v <0x078e3223>
+			streams:   0, words:     0
+		worklib.test_HW1_1_RTL:v <0x4d383224>
+			streams:   8, words:  9831
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                547     531
+		UDPs:                   247      12
+		Primitives:            1896      10
+		Timing outputs:         686     570
+		Registers:              162     169
+		Scalar wires:           866       -
+		Expanded wires:          16       2
+		Vectored wires:           3       -
+		Always blocks:            1       1
+		Initial blocks:           4       4
+		Cont. assignments:        1      18
+		Pseudo assignments:       3       3
+		Timing checks:         1978       -
+		Interconnect:            52       -
+		Simulation timescale:   1ps
+	Writing initial simulation snapshot: worklib.BUFX2:v
+Loading snapshot worklib.BUFX2:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+                   0 gate level: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=0
+		     syn version: A=11111010 B=11111100 Add_ctrl=1 SUM=xxxxxxxx Overflow=x
+
+                   1 gate level: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=0
+		     syn version: A=11111010 B=11111100 Add_ctrl=1 SUM=xxxxxx1x Overflow=x
+
+                   1 gate level: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=0
+		     syn version: A=11111010 B=11111100 Add_ctrl=1 SUM=xxxxxx10 Overflow=x
+
+                   1 gate level: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=0
+		     syn version: A=11111010 B=11111100 Add_ctrl=1 SUM=xxxxx110 Overflow=x
+
+                   1 gate level: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=0
+		     syn version: A=11111010 B=11111100 Add_ctrl=1 SUM=x111x110 Overflow=x
+
+                   1 gate level: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=0
+		     syn version: A=11111010 B=11111100 Add_ctrl=1 SUM=1111x110 Overflow=x
+
+                   2 gate level: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=0
+		     syn version: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=x
+
+                   2 gate level: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=0
+		     syn version: A=11111010 B=11111100 Add_ctrl=1 SUM=11110110 Overflow=0
+
+                  20 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=11110110 Overflow=0
+
+                  20 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=11111110 Overflow=0
+
+                  20 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=10001110 Overflow=0
+
+                  21 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=00001110 Overflow=0
+
+                  21 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=00001100 Overflow=0
+
+                  21 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=00011100 Overflow=0
+
+                  21 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=00011000 Overflow=0
+
+                  21 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=00011010 Overflow=0
+
+                  21 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=00111010 Overflow=0
+
+                  21 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=00110010 Overflow=0
+
+                  22 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=00100010 Overflow=0
+
+                  22 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=01100010 Overflow=0
+
+                  22 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=01000010 Overflow=0
+
+                  22 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=11000010 Overflow=0
+
+                  22 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=10000010 Overflow=0
+
+                  23 gate level: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+		     syn version: A=00000011 B=11111111 Add_ctrl=1 SUM=00000010 Overflow=0
+
+                  40 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=10111111 Overflow=1
+		     syn version: A=01001111 B=01110000 Add_ctrl=1 SUM=00000010 Overflow=0
+
+                  40 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=10111111 Overflow=1
+		     syn version: A=01001111 B=01110000 Add_ctrl=1 SUM=01000010 Overflow=0
+
+                  41 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=10111111 Overflow=1
+		     syn version: A=01001111 B=01110000 Add_ctrl=1 SUM=01000011 Overflow=0
+
+                  41 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=10111111 Overflow=1
+		     syn version: A=01001111 B=01110000 Add_ctrl=1 SUM=11000011 Overflow=0
+
+                  41 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=10111111 Overflow=1
+		     syn version: A=01001111 B=01110000 Add_ctrl=1 SUM=11000011 Overflow=1
+
+                  41 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=10111111 Overflow=1
+		     syn version: A=01001111 B=01110000 Add_ctrl=1 SUM=11000111 Overflow=1
+
+                  42 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=10111111 Overflow=1
+		     syn version: A=01001111 B=01110000 Add_ctrl=1 SUM=11001111 Overflow=1
+
+                  42 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=10111111 Overflow=1
+		     syn version: A=01001111 B=01110000 Add_ctrl=1 SUM=11011111 Overflow=1
+
+                  43 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=10111111 Overflow=1
+		     syn version: A=01001111 B=01110000 Add_ctrl=1 SUM=11111111 Overflow=1
+
+                  43 gate level: A=01001111 B=01110000 Add_ctrl=1 SUM=10111111 Overflow=1
+		     syn version: A=01001111 B=01110000 Add_ctrl=1 SUM=10111111 Overflow=1
+
+                  60 gate level: A=11111110 B=11111111 Add_ctrl=0 SUM=11111111 Overflow=0
+		     syn version: A=11111110 B=11111111 Add_ctrl=0 SUM=10111111 Overflow=1
+
+                  60 gate level: A=11111110 B=11111111 Add_ctrl=0 SUM=11111111 Overflow=0
+		     syn version: A=11111110 B=11111111 Add_ctrl=0 SUM=10111111 Overflow=0
+
+                  61 gate level: A=11111110 B=11111111 Add_ctrl=0 SUM=11111111 Overflow=0
+		     syn version: A=11111110 B=11111111 Add_ctrl=0 SUM=11111111 Overflow=0
+
+                  80 gate level: A=10000000 B=00000001 Add_ctrl=0 SUM=01111111 Overflow=1
+		     syn version: A=10000000 B=00000001 Add_ctrl=0 SUM=11111111 Overflow=0
+
+                  81 gate level: A=10000000 B=00000001 Add_ctrl=0 SUM=01111111 Overflow=1
+		     syn version: A=10000000 B=00000001 Add_ctrl=0 SUM=01111111 Overflow=0
+
+                  81 gate level: A=10000000 B=00000001 Add_ctrl=0 SUM=01111111 Overflow=1
+		     syn version: A=10000000 B=00000001 Add_ctrl=0 SUM=01111111 Overflow=1
+
+                 100 gate level: A=01000000 B=10000001 Add_ctrl=0 SUM=10111111 Overflow=1
+		     syn version: A=01000000 B=10000001 Add_ctrl=0 SUM=01111111 Overflow=1
+
+                 100 gate level: A=01000000 B=10000001 Add_ctrl=0 SUM=10111111 Overflow=1
+		     syn version: A=01000000 B=10000001 Add_ctrl=0 SUM=01111111 Overflow=0
+
+                 100 gate level: A=01000000 B=10000001 Add_ctrl=0 SUM=10111111 Overflow=1
+		     syn version: A=01000000 B=10000001 Add_ctrl=0 SUM=00111111 Overflow=0
+
+                 101 gate level: A=01000000 B=10000001 Add_ctrl=0 SUM=10111111 Overflow=1
+		     syn version: A=01000000 B=10000001 Add_ctrl=0 SUM=10111111 Overflow=0
+
+                 101 gate level: A=01000000 B=10000001 Add_ctrl=0 SUM=10111111 Overflow=1
+		     syn version: A=01000000 B=10000001 Add_ctrl=0 SUM=10111111 Overflow=1
+
+Simulation complete via $finish(1) at time 120 NS + 0
+./HW1_1_RTL_tb.v:70     $finish;
+ncsim> exit
+TOOL:	ncverilog	14.10-s005: Exiting on Apr 28, 2018 at 00:40:55 CST  (total: 00:00:02)

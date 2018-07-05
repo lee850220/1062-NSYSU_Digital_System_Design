@@ -1,0 +1,42 @@
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+        -sort_by group
+Design : Top
+Version: N-2017.09-SP2
+Date   : Wed Jun 20 01:08:15 2018
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: o_0/Counter_reg_3_
+              (rising edge-triggered flip-flop clocked by Clk)
+  Endpoint: o_0/Valid_reg
+            (rising edge-triggered flip-flop clocked by Clk)
+  Path Group: Clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk (rise edge)                    0.83       0.83
+  clock network delay (ideal)              0.00       0.83
+  o_0/Counter_reg_3_/CK (DFFSX1)           0.00       0.83 r
+  o_0/Counter_reg_3_/QN (DFFSX1)           0.26       1.09 f
+  o_0/Valid_reg/RN (DFFTRX1)               0.00       1.09 f
+  data arrival time                                   1.09
+
+  clock Clk (rise edge)                    0.83       0.83
+  clock network delay (ideal)              0.00       0.83
+  o_0/Valid_reg/CK (DFFTRX1)               0.00       0.83 r
+  library hold time                       -0.09       0.74
+  data required time                                  0.74
+  -----------------------------------------------------------
+  data required time                                  0.74
+  data arrival time                                  -1.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.35
+
+
